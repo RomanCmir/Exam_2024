@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Год семьи 2024</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <img src="img\Logo.png" alt="logo" style="margin-top: 10px; margin-left: 10px; margin-bottom: 35px;">
+        <nav style="margin-left: 110px; margin-top: -85px;">
+            <ul>
+                <li><a href="#main" class="header-link">Главная</a></li>
+                <li><a href="#about" class="header-link">О Годе семьи</a></li>
+                <li><a href="#initiativites" class="header-link">Инициативы</a></li>
+                <li><a href="#ivents" class="header-link">Мероприятия</a></li>
+                <li class="add" style="margin-left: 10%;"><a href="#"><img src="icons\gas-kvas-com-p-znachok-geolokatsii-belii-na-prozrachnom-f-19.png" style="width: 25px; height: auto;"></a></li>
+                <li><a href="" class="header-link">Ул. Мира 125</a></li>
+                <li class="add"><a href="#"><img src="icons\kisspng-mobile-phone.png" style="width: 20px; height: auto;"></a></li>
+                <li><a href="" class="header-link">8-800-600</a></li> 
+            </ul>
+        </nav>
+
+    </div>
+    <!--Banner-->
+    <div class="banner" style="margin-top: 0px;" id="main" name="main">
+        <div id="container">
+            <img src="img\Banner.png" style="max-width: 100%; height: auto;">
+        </div>
+      
+    </div>
+    <!--Slider-->  
+    <div class="slider" style="justify-content: center; text-align: center; margin-top: 30px;" id="about" name="about">
+        <div class="item"><img src="img\Group 4.png" alt="Первый слайд" /></div>
+        <div class="item"><img src="img\Group 3.png" alt="Второй слайд" /></div>
+        <div class="item"><img src="img\Group 2.png" alt="Третий слайд" /></div>
+        <div class="item"><img src="img\Group 1.png" alt="Четвертый слайд" /></div>
+        <a class="prev" onclick="minusSlide()">❮</a> <a class="next" onclick="plusSlide()">❯</a></div>
+        <div class="slider-dots"><span class="slider-dots_item" onclick="currentSlide(1)"></span> <span class="slider-dots_item" onclick="currentSlide(2)"></span> <span class="slider-dots_item" onclick="currentSlide(3)"> </span> <span class="slider-dots_item" onclick="currentSlide(4)"> </span></div>
+    <!--6 initiatives-->
+    <div style="justify-content: center; text-align: center;">
+        <h1>Инициативы региона</h1>
+    </div>
+    <section class="ivents" style="margin-top: 20px;" id="initiativites" name="initiativites">
+        <div class="ivent">
+            <img src="img\ini-1.jpg" alt="Мероприятие 1">
+            <h3>Поддержка многодетных семей</h3>
+            <p>Комплекс мер, направленный на создание<br> благоприятных условий для семей</p>
+            <a href="#" class="btn" id="myBtn1">Подробнее</a>
+            <!-- Модальное окно -->
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close1">&times;</span>
+                    <h3>Поддержка многодетных семей</h3>
+                    <p>Комплекс мер, направленный на создание максимально благоприятных условий для многодетных родителей: расширение льгот и социальных выплат, улучшение жилищных условий, доступность дошкольного и школьного образования, организация семейного досуга. Цель - повышение рождаемости, укрепление института многодетной семьи.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ivent">
+            <img src="img\ini-2.jpg" alt="Мероприятие 2">
+            <h3>Родительская академия</h3>
+            <p>Развитие сети центров психологического<br> и педагогического сопровождения семьи</p>
+            <a href="#" class="btn" id="myBtn2">Подробнее</a>
+            <!-- Модальное окно -->
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close2">&times;</span>
+                    <h3>Родительская академия</h3>
+                    <p>Развитие сети центров психолого-педагогического сопровождения семьи, где родители могут получить квалифицированные консультации по вопросам воспитания детей, детско-родительских отношений, планирования семьи. Задача - повышение родительской компетентности, профилактика семейных конфликтов.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ivent">
+            <img src="img\ini-3.png" alt="Мероприятие 3">
+            <h3>Семья - основа государства</h3>
+            <p>Программа патриотического воспитания,<br> включающая цикл разных мероприятий</p>
+            <a href="#" class="btn" id="myBtn3">Подробнее</a>
+            <!-- Модальное окно -->
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close3">&times;</span>
+                    <h3>Семья - основа государства</h3>
+                    <p>Программа патриотического воспитания, включающая цикл тематических мероприятий, образовательных модулей, информационных кампаний. Ключевая задача - формирование у подрастающего поколения уважительного отношения к семье, родителям, семейным традициям как базовым ценностям общества.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ivent">
+            <img src="img\ini-4.jpg" alt="Мероприятие 4">
+            <h3>Семейные выходные</h3>
+            <p>Организация регулярных и разнообразных<br> досуговых мероприятий для семей</p>
+            <a href="#" class="btn" id="myBtn4">Подробнее</a>
+            <!-- Модальное окно -->
+            <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close4">&times;</span>
+                    <h3>Семейные выходные</h3>
+                    <p>Организация регулярных досуговых мероприятий для семей: семейные квесты, спортивные состязания, художественные мастер-классы, игротеки. Участие бесплатное или по льготным ценам. Цель - создание комфортной среды для семейного общения и взаимодействия.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ivent">
+            <img src="img\ini-5.jpg" alt="Мероприятие 5">
+            <h3>Семейный бизнес</h3>
+            <p>Программа поддержки семейного<br> предпринимательства, основы ведения бизнеса</p>
+        <a href="#" class="btn" id="myBtn5">Подробнее</a>
+        <!-- Модальное окно -->
+        <div id="myModal5" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close5">&times;</span>
+                <h3>Семейный бизнес</h3>
+                <p>Программа поддержки семейного предпринимательства, включающая льготное кредитование, налоговые преференции, обучение основам ведения бизнеса. Задача - содействие развитию семейных предприятий, укрепление материального благополучия семей.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ivent">
+        <img src="img\ini-6.jpg" alt="Мероприятие 6">
+        <h3>Династии региона</h3>
+        <p>Создание интерактивной экспозиции,<br> рассказывающей о знаменитых семейных кланах</p>
+        <a href="#" class="btn" id="myBtn6">Подробнее</a>
+        <!-- Модальное окно -->
+        <div id="myModal6" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close6">&times;</span>
+                <h3>Династии региона</h3>
+                <p>Создание интерактивной экспозиции, рассказывающей о знаменитых семейных кланах, внесших значительный вклад в развитие региона. Предусмотрено проведение исследований семейных архивов, организация встреч потомков династий. Цель - популяризация семейных ценностей, преемственность поколений.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Ivents-->
+<div style="justify-content: center; text-align: center;">
+    <h1>Мероприятия</h1>
+</div>
+
+<section class="ivents" style="margin-top: 20px;" id="ivents" name="ivents">
+<div class="ivent">
+    <img src="img\ivent-1.jpg" alt="Мероприятие 1">
+    <h3>Семейный фестиваль</h3>
+    <p>Яркий праздник для всей семьи</p>
+    <a href="#" class="btn" id="myBtn7">Регистрация</a>
+  
+    <!-- Модальное окно -->
+    <div id="myModal7" class="modal7">
+      <div class="modal-content7">
+        <span class="close7">&times;</span>
+        <h2>Заявка на участие в мероприятии</h2>
+        <form id="form7">
+            <div class="text-field">
+            <label for="fio">ФИО:</label>
+            </div>
+          <input type="text" id="fio" name="fio" placeholder="Ваше ФИО" required>
+          <br>
+            <div class="text-field" style="margin-top: 10px;">
+            <label for="type">Форма участия:</label>
+            </div>
+          <select id="type" name="type" required>
+            <div class="text-field">
+            <option value="" disabled selected>Выберите форму участия</option>
+            <option value="очно">Очно</option>
+            <option value="онлайн">Онлайн</option>
+            </div>
+          </select>
+          <br>
+            <div class="text-field" style="margin-top: 10px;">
+            <label for="date">Дата проведения:</label>
+            </div>
+          <input type="date" id="date" name="date" required>
+          <br>
+            <div>
+            <input type="submit" value="Зарегистрироваться">
+            <input type="reset" value="Очистить форму">
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="ivent">
+    <img src="img\ivent-2.jpg" alt="Мероприятие 1">
+    <h3>Мама, папа, я - спортивная семья</h3>
+    <p>Спортивные соревнования для семейных<br> команд</p>
+    <a href="#" class="btn" id="myBtn7">Регистрация</a>
+  
+    <!-- Модальное окно -->
+    <div id="myModal7" class="modal7">
+      <div class="modal-content7">
+        <span class="close7">&times;</span>
+        <h2>Заявка на участие в мероприятии</h2>
+        <form id="form7">
+            <div class="text-field">
+            <label for="fio">ФИО:</label>
+            </div>
+          <input type="text" id="fio" name="fio" placeholder="Ваше ФИО" required>
+          <br>
+            <div class="text-field" style="margin-top: 10px;">
+            <label for="type">Форма участия:</label>
+            </div>
+          <select id="type" name="type" required>
+            <div class="text-field">
+            <option value="" disabled selected>Выберите форму участия</option>
+            <option value="очно">Очно</option>
+            <option value="онлайн">Онлайн</option>
+            </div>
+          </select>
+          <br>
+            <div class="text-field" style="margin-top: 10px;">
+            <label for="date">Дата проведения:</label>
+            </div>
+          <input type="date" id="date" name="date" required>
+          <br>
+            <div>
+            <input type="submit" value="Зарегистрироваться">
+            <input type="reset" value="Очистить форму">
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="ivent">
+    <img src="img\ivent-3.jpg" alt="Мероприятие 1">
+    <h3>Семейный туризм</h3>
+    <p>Организация тематических экскурсий,<br> походов</p>
+    <a href="#" class="btn" id="myBtn7">Регистрация</a>
+  
+    <!-- Модальное окно -->
+    <div id="myModal7" class="modal7">
+      <div class="modal-content7">
+        <span class="close7">&times;</span>
+        <h2>Заявка на участие в мероприятии</h2>
+        <form id="form7">
+            <div class="text-field">
+            <label for="fio">ФИО:</label>
+            </div>
+          <input type="text" id="fio" name="fio" placeholder="Ваше ФИО" required>
+          <br>
+            <div class="text-field" style="margin-top: 10px;">
+            <label for="type">Форма участия:</label>
+            </div>
+          <select id="type" name="type" required>
+            <div class="text-field">
+            <option value="" disabled selected>Выберите форму участия</option>
+            <option value="очно">Очно</option>
+            <option value="онлайн">Онлайн</option>
+            </div>
+          </select>
+          <br>
+            <div class="text-field" style="margin-top: 10px;">
+            <label for="date">Дата проведения:</label>
+            </div>
+          <input type="date" id="date" name="date" required>
+          <br>
+            <div>
+            <input type="submit" value="Зарегистрироваться">
+            <input type="reset" value="Очистить форму">
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Btn up-->
+<div class="btn-up btn-up_hide"></div>
+
+<footer>
+  <div class="footer" style="display: flex; justify-content: center;">
+    <nav>
+      <ul>
+          <li><a href="#main" class="header-link">Главная</a></li>
+          <li><a href="#about" class="header-link">О Годе семьи</a></li>
+          <li><a href="#initiativites" class="header-link">Инициативы</a></li>
+          <li><a href="#ivents" class="header-link">Мероприятия</a></li> 
+      </ul>
+  </nav>
+  </div>
+  <div class="footer" style="display: flex; justify-content: center;">
+    <nav>
+      <ul>
+        <li class="add" style="margin-left: 0%;"><a href="#"><img src="icons\gas-kvas-com-p-znachok-geolokatsii-belii-na-prozrachnom-f-19.png" style="width: 25px; height: auto;"></a></li>
+          <li><a href="" class="header-link">Ул. Мира 125</a></li>
+          <li class="add"><a href="#"><img src="icons\kisspng-mobile-phone.png" style="width: 20px; height: auto;"></a></li>
+          <li><a href="" class="header-link">8-800-600</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer" style="display: flex; justify-content: center;">
+    <a href="#main" class="btn-footer">Наверх</a>
+  </div>
+  <div class="footer" style="display: flex; justify-content: center;">
+      <a href="index.html"><img src="social-img\telegram.jpg" style="width: auto; height: 40px; margin-top: 15px; max-height: 100%; max-width: 100%; margin-bottom: 5%; margin-right: 5%;"></a>
+      <a href="index.html"><img src="social-img\vk.jpg" style="width: auto; height: 50px; margin-top: 10px; max-height: 100%; max-width: 100%; margin-bottom: 5%; margin-right: 5%"></a>
+      <a href="index.html"><img src="social-img\youtube.jpg" style="width: auto; height: 50px; margin-top: 10px; max-height: 100%; max-width: 100%; margin-bottom: 5%;"></a>
+  </div>
+</footer>
+
+        <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+function plusSlide() {
+    showSlides(slideIndex += 1);
+}
+
+/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+function minusSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Основная функция слайдера */
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("item");
+    var dots = document.getElementsByClassName("slider-dots_item");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+// Установка интервала для автоматического переключения слайдов
+var interval;
+
+// Запуск автоматического переключения слайдов
+function startSlideshow() {
+    interval = setInterval(plusSlide, 4000);
+}
+
+// Остановка автоматического переключения слайдов при наведении курсора
+document.querySelectorAll(".item, .slider-dots_item").forEach(function(element) {
+    element.addEventListener("mouseover", function() {
+        clearInterval(interval);
+    });
+    element.addEventListener("mouseout", function() {
+        startSlideshow();
+    });
+});
+
+// Запуск автоматического переключения слайдов при загрузке страницы
+startSlideshow();
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
+const btnUp = {
+  el: document.querySelector('.btn-up'),
+  show() {
+    // удалим у кнопки класс btn-up_hide
+    this.el.classList.remove('btn-up_hide');
+  },
+  hide() {
+    // добавим к кнопке класс btn-up_hide
+    this.el.classList.add('btn-up_hide');
+  },
+  addEventListener() {
+    // при прокрутке содержимого страницы
+    window.addEventListener('scroll', () => {
+      // определяем величину прокрутки
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+      scrollY > 400 ? this.show() : this.hide();
+    });
+    // при нажатии на кнопку .btn-up
+    document.querySelector('.btn-up').onclick = () => {
+      // переместим в начало страницы
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+}
+
+btnUp.addEventListener();
+
+// Получаем кнопки "Подробнее"
+var buttons = document.querySelectorAll(".btn");
+
+// Получаем модальные окна
+var modals = document.querySelectorAll(".modal");
+
+// Получаем кнопки закрытия модальных окон
+var closes = document.querySelectorAll(".close");
+
+// Функция для открытия модального окна
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+}
+
+// Функция для закрытия модального окна
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
+// Обработчики событий для кнопок "Подробнее"
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+        var modalId = "myModal" + this.id.slice(-1);
+        openModal(modalId);
+    });
+}
+
+// Обработчики событий для кнопок закрытия модальных окон
+for (var i = 0; i < closes.length; i++) {
+    closes[i].addEventListener("click", function() {
+        var modalId = this.id.slice(5);
+        closeModal("myModal" + modalId);
+    });
+}
+
+// Обработчик события для закрытия модального окна при клике вне его
+window.addEventListener("click", function(event) {
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
+});
+
+// Получить элементы
+var modal = document.getElementById('myModal7');
+var btn = document.getElementById("myBtn7");
+var span = document.getElementsByClassName("close7")[0];
+var form = document.getElementById('form7');
+
+// Открыть модальное окно
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Закрыть модальное окно
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Закрыть модальное окно при нажатии на кнопку Закрыть
+document.querySelector('.close7').addEventListener('click', function() {
+  modal.style.display = "none";
+});
+
+// Закрыть модальное окно при клике вне окна
+window.addEventListener('click', function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Обработать отправку формы
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Проверить заполнение полей
+  if (document.getElementById('fio').value === "" ||
+      document.getElementById('type').value === "" ||
+      document.getElementById('date').value === "") {
+    alert('Пожалуйста, заполните все поля.');
+    return;
+  }
+
+  // Отправить форму
+  alert('Ваша заявка отправлена!');
+  form.reset();
+});
+        </script>
+
+
+</body>
+</html>
